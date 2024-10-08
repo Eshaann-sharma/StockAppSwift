@@ -16,7 +16,6 @@ struct ContentView: View {
             }
         }
     }
-
     var body: some View {
         NavigationView {
             VStack(spacing: 15) {
@@ -38,10 +37,6 @@ struct ContentView: View {
                         .padding()
                 } else {
                     // Scrollable Search Results with a fixed height
-//                    Text("Search Results")
-//                        .font(.headline)
-//                        .padding(.leading)
-//                        .frame(maxWidth: .infinity, alignment: .leading)
                     
                     List {
                         ForEach(filteredStocks) { stock in
