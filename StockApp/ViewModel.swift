@@ -28,7 +28,7 @@ class StockViewModel: ObservableObject {
 
     // Fetch the list of available stock symbols
     func fetchStockSymbols() {
-            guard stockSymbols.isEmpty else { return } // Ensure this is called only once
+            guard stockSymbols.isEmpty else { return } 
             self.isLoading = true
             let urlString = "https://finnhub.io/api/v1/stock/symbol?exchange=US&token=\(apiKey)"
             guard let url = URL(string: urlString) else {

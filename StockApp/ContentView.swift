@@ -36,8 +36,7 @@ struct ContentView: View {
                         .progressViewStyle(CircularProgressViewStyle(tint: .blue))
                         .padding()
                 } else {
-                    // Scrollable Search Results with a fixed height
-                    
+                    // Scrollable Search Results
                     List {
                         ForEach(filteredStocks) { stock in
                             HStack {
@@ -62,10 +61,9 @@ struct ContentView: View {
                             .padding(.horizontal, 9)
                             .background(Color.white.opacity(0.1))
                             .cornerRadius(10)
-//                            .shadow(radius: 3)
                         }
                     }
-                    .frame(maxHeight: 400) // Limit the height of the search results list
+                    .frame(maxHeight: 400)
                     .listStyle(PlainListStyle())
                 }
 
@@ -114,7 +112,7 @@ struct ContentView: View {
                             }
                         }
                     }
-                    .frame(maxHeight: 200) // Set a fixed height for scrollable added stocks
+                    .frame(maxHeight: 200)
                 }
 
                 Spacer()
@@ -135,10 +133,10 @@ struct ContentView: View {
             }
         }
         .onAppear {
-            stockViewModel.fetchStockSymbols() // Ensure this is only called once
+            stockViewModel.fetchStockSymbols()
         }
-        .background(Color.black.edgesIgnoringSafeArea(.all)) // Background color
-        .accentColor(.white) // Accent color for navigation
+        .background(Color.black.edgesIgnoringSafeArea(.all))
+        .accentColor(.white)
         .preferredColorScheme(.dark)
     }
 }

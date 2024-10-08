@@ -33,7 +33,7 @@ struct StockDetailBottomSheet: View {
                 } else {
                     // Display ProgressView while data is being loaded
                     ProgressView("Loading stock data...")
-                        .progressViewStyle(CircularProgressViewStyle(tint: .blue))// Set the color to blue
+                        .progressViewStyle(CircularProgressViewStyle(tint: .blue))
                         .foregroundColor(.white)
                         .padding()
                 }
