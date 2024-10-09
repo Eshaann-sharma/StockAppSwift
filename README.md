@@ -1,10 +1,10 @@
-# 📈 StockApp
+# StockApp
 
 StockApp is an iOS application built using SwiftUI and integrates with the [Finnhub API](https://finnhub.io) to provide real-time stock information. Users can search for stock symbols, view detailed stock data, and maintain a personalized list of stocks. The app is designed with a clean, dark-mode interface for an enhanced user experience.
 
 ---
 
-## 📷 Screenshots
+## Screenshots
 
 <img width="300" alt="home page" src="https://github.com/user-attachments/assets/f06ea9d2-6376-4649-a212-ebae5b04f916">
 <img width="300" alt="ImageView" src="https://github.com/user-attachments/assets/fbcf3965-8fe8-48fa-b0cc-1ef6b24439f0">
@@ -14,7 +14,7 @@ StockApp is an iOS application built using SwiftUI and integrates with the [Finn
 
 ---
 
-## 🚀 Features
+## Features
 
 - **Search for Stocks**: Search for stocks by symbol or company description.
 - **Add Stocks to Watchlist**: Easily add stocks to a personalized watchlist.
@@ -24,7 +24,7 @@ StockApp is an iOS application built using SwiftUI and integrates with the [Finn
 
 ---
 
-## 🛠️ Technologies
+## Technologies
 
 - **SwiftUI**: Modern declarative UI framework for building iOS apps.
 - **Combine**: Framework for managing asynchronous events in Swift.
@@ -34,7 +34,7 @@ StockApp is an iOS application built using SwiftUI and integrates with the [Finn
 
 ---
 
-## 🏗️ Project Structure
+## Project Structure
 
 The project follows the **MVVM (Model-View-ViewModel)** pattern for separation of concerns:
 
@@ -44,7 +44,7 @@ The project follows the **MVVM (Model-View-ViewModel)** pattern for separation o
 
 ---
 
-## 🔧 Installation
+## Installation
 
 1. Clone the repository:
    ```bash
@@ -68,7 +68,7 @@ The project follows the **MVVM (Model-View-ViewModel)** pattern for separation o
 
 ---
 
-## 🧪 Testing
+## Testing
 
 To test the app:
 
@@ -80,7 +80,7 @@ To test the app:
 
 ---
 
-## 🗂️ Project Files
+## Project Files
 
 - **`ContentView.swift`**: The main screen of the app containing the search bar, stock list, and watchlist.
 - **`StockDetailBottomSheet.swift`**: The bottom sheet view that displays detailed stock information.
@@ -90,7 +90,7 @@ To test the app:
 
 ---
 
-## 📡 API Usage
+## API Usage
 
 The app uses the [Finnhub API](https://finnhub.io) to fetch stock symbols and stock quotes. To get started, sign up for a free account and generate your API key.
 
